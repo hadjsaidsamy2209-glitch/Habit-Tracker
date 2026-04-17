@@ -1,16 +1,29 @@
-# React + Vite
+# Habit Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application mobile de suivi d'habitudes quotidiennes, construite avec React + Firebase.
 
-Currently, two official plugins are available:
+## Aperçu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Habit Tracker te permet de créer et suivre tes habitudes au quotidien avec un système de streaks, des statistiques détaillées et un historique complet.
 
-## React Compiler
+## Fonctionnalités
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Authentification Google (popup sur desktop, redirect sur mobile)
+- Ajout, renommage et suppression d'habitudes avec swipe actions
+- Suivi des streaks et record personnel par habitude
+- Reset quotidien automatique avec sauvegarde de l'historique
+- Statistiques par habitude (streak, record, 7 derniers jours)
+- Jours parfaits consécutifs
+- Calendrier mensuel avec statut par jour (parfait / partiel / manqué)
+- Interface dark mode style iOS
+- Notifications push avec rappels personnalisables
 
-## Expanding the ESLint configuration
+## Stack technique
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Firebase (Firestore + Authentication)
+- Vercel (déploiement)
+
+## Déploiement
+
+L'app est déployée automatiquement sur Vercel à chaque push sur main.
